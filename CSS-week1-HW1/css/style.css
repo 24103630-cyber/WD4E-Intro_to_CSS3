@@ -12,8 +12,11 @@ header {
 }
 
 nav {
-    background-color: #2563eb;
-    padding: 12px;
+  background-color: #374151;
+}
+
+nav a {
+  color: #ffffff;
 }
 
 main {
@@ -22,10 +25,11 @@ main {
 }
 
 h1 {
-    color: #1e40af;
+  text-align: center;
+  font-family: Georgia, serif;
+  color: #ffffff;
 }
 footer {
-    background-color: #dbeafe;
-    color: #1e3a8a;
-    padding: 15px;
+  background-color: #1f2937;
+  color: #ffffff;
 }
