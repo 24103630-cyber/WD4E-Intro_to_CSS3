@@ -6,55 +6,65 @@ body {
   background-color: #f5f9fc;
 }
 
+/* Skip to Main Content */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.skip-link:focus {
+  left: 10px;
+  z-index: 1000;
+}
+
+/* Header */
 header {
   background-color: #dbeafe;
   padding: 20px;
 }
 
-/* Skip to Main Content */
-.skip-link {
-  position: absolute;
-  left: -9999px;
-}
-
-.skip-link:focus {
-  left: 10px;
-  top: 10px;
-  background-color: #ffffff;
-  color: #263238;
-  padding: 10px;
-  border: 2px solid #263238;
-}
-
 /* Navigation */
 nav {
   background-color: #374151;
-  padding: 15px;
+  padding: 10px;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  align-items: center;
+  gap: 30px;
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
 }
 
 nav a {
   color: #ffffff;
+  background-color: #374151;
   text-decoration: none;
   padding: 10px 15px;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 /* Hover effect */
 nav a:hover {
-  background-color: #5c8d89;
-  border-radius: 8px;
-  transform: scale(1.05);
+  background-color: #1f2937;
+  transform: scale(1.08);
 }
 
-/* Main content */
+/* Main */
 main {
   background-color: #ffffff;
   padding: 25px;
@@ -65,15 +75,24 @@ main > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  justify-items: center;
+  align-items: center;
 }
 
-/* Images - Box Model */
+/* All images - box model */
 img {
-  max-width: 100%;
-  border: 3px solid #2f5d62;
+  border: 4px solid #607d8b;
   padding: 8px;
-  border-radius: 15px;
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
   box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+/* Image hover */
+img:hover {
+  transform: scale(1.05);
 }
 
 /* nth-child */
@@ -81,16 +100,18 @@ main > div img:nth-child(even) {
   border-radius: 30px;
 }
 
+/* Heading */
 h1 {
   text-align: center;
   font-family: Georgia, serif;
   color: #263238;
 }
 
+/* Footer */
 footer {
   background-color: #1f2937;
   color: #ffffff;
-  padding: 20px;
+  padding: 15px;
 }
 
 footer a {
